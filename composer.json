@@ -1,0 +1,54 @@
+{
+  "name": "lucasbrito-wdt/correios",
+  "description": "Pacote Laravel para integração com as APIs do CWS (Correios Web Services) — Token, CEP, Preço, Prazo, Rastro e Pré-Postagem.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "correios",
+    "cws",
+    "frete",
+    "rastreio",
+    "etiqueta",
+    "pre-postagem"
+  ],
+  "authors": [
+    {
+      "name": "CodifyTech",
+      "email": "contato@codifytech.com.br"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "illuminate/support": "^11.0|^12.0",
+    "illuminate/http": "^11.0|^12.0",
+    "illuminate/cache": "^11.0|^12.0",
+    "illuminate/validation": "^11.0|^12.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^9.0|^10.0",
+    "phpunit/phpunit": "^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Correios\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Correios\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Correios\\Providers\\CorreiosServiceProvider"
+      ],
+      "aliases": {
+        "Correios": "Correios\\Facades\\Correios"
+      }
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
